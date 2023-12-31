@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .message { border: 1px solid #ddd; margin: 10px 0; padding: 5px 10px; }
+        .user { background-color: #ddf; }
+        .assistant { background-color: #fdd; }
+    </style>
+</head>
+<body>
+    <h1>Chat with the Assistant</h1>
+    <div id="chat">
+        {% for message in messages %}
+        <div class="message {{ message.role }}">
+            <strong>{{ message.role.capitalize() }}:</strong> {{ message.content }}
+        </div>
+        {% endfor %}
+    </div>
+    <form method="post">
+        <input type="text" name="user_input" placeholder="Type your message..." autofocus>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
