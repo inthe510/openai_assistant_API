@@ -9,7 +9,7 @@ app.secret_key = 'your_secret_key'  # Replace with your secret key
 openai_api = os.environ.get('OPENAI_API_KEY')
 client = openai.OpenAI(api_key=openai_api)
 
-assistant_id = "asst_s8SHsIuNr69CbAxvKXytcX8C"
+assistant_id = "xyz"  #replace with your assistant key from OpenAI assistnt dashboard
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
