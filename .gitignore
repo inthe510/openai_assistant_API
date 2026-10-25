@@ -1,0 +1,19 @@
+
+
+# Local secrets and generated environments
+.env
+.env.*
+!.env.example
+!.env.*.example
+venv/
+.venv/
+env/
+myenv/
+__pycache__/
+*.py[cod]
+.venv-security/
+.pytest_cache/
+.local/
+*.db
+*.sqlite
+*.sqlite3

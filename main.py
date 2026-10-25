@@ -65,4 +65,4 @@ def process_user_input(user_input):
             session['messages'].append({'role': 'assistant', 'content': message.content[0].text.value})
 
 if __name__ == '__main__':
-    app.run(debug=True, port = 5001)
+    app.run(debug=False, port = 5001)
